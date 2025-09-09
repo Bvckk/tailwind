@@ -1,0 +1,41 @@
+{
+  "Room": [
+    {
+      "id": "1",
+      "roomId": "p101",
+      "roomName": "Phòng họp tầng 1",
+      "capacity": 10,
+      "status": "available"
+    },
+    {
+      "id": "e15a",
+      "roomId": "p102",
+      "roomName": "phòng họp",
+      "capacity": "20",
+      "status": "maintenance"
+    },
+    {
+      "id": "b1c3",
+      "roomId": "p103",
+      "roomName": "hoc",
+      "capacity": "12",
+      "status": "unavailable"
+    },
+    {
+      "id": "a933",
+      "roomId": "p104",
+      "roomName": "phong hop",
+      "capacity": "23",
+      "status": "available"
+    },
+    {
+      "id": "58da",
+      "roomId": "p105",
+      "roomName": "phongf hopj",
+      "capacity": "10",
+      "status": "available"
+    }
+  ],
+  "User": [],
+  "Booking": []
+}
