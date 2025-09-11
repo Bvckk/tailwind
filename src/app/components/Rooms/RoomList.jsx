@@ -12,7 +12,7 @@ export default function RoomList() {
   const [showFormUpdate, setShowFormUpdate] = useState(false);
   const [selectedRoom, setSelectedRoom] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const pageSize = 6
+  const pageSize = 5
 
   // hàm lấy roomId tiếp theo
     const getNextRoomId = () => {
@@ -195,16 +195,16 @@ export default function RoomList() {
 
         {/* Modal thêm phòng */}
         {showFormAdd && (
-<div className="fixed inset-0 bg-black/80 flex justify-center items-center z-50">
-<div className="bg-gray-800 p-2 rounded-lg shadow-lg w-3/6 relative z-60">
-<div className="flex justify-between border-b p-2 items-center mb-4">
-<h3 className="text-lg font-bold">Thêm phòng mới</h3>
-<button onClick={() => setShowFormAdd(false)}>&times;</button>
-</div>
-<RoomFormAdd onSave={addRoom} defaultRoomId={getNextRoomId()} />
-</div>
-</div>
-)}
+        <div className="fixed inset-0 bg-black/80 flex justify-center items-center z-50">
+        <div className="bg-gray-800 p-2 rounded-lg shadow-lg w-3/6 relative z-60">
+        <div className="flex justify-between border-b p-2 items-center mb-4">
+        <h3 className="text-lg font-bold">Thêm phòng mới</h3>
+        <button onClick={() => setShowFormAdd(false)}>&times;</button>
+        </div>
+        <RoomFormAdd onSave={addRoom} defaultRoomId={getNextRoomId()} />
+        </div>
+        </div>
+        )}
         {/* Modal cập nhật phòng */}
         {showFormUpdate && selectedRoom && (
           <div className="fixed inset-0 bg-black/80  flex justify-center items-center">

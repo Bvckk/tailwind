@@ -2,11 +2,6 @@ import Header from "./Head";
 import Nav from "./Nav";
 export default function MainLayout({ children }) {
   return (
-    <html lang="en">
-      <head>
-        <link href="/dist/styles.css" rel="stylesheet"></link>
-      </head>
-      <body>
         <div className="h-screen grid grid-rows-[80px_1fr] grid-cols-12">
           {/* Sidebar */}
           <aside className="col-span-2 row-span-2 flex flex-col items-start justify-start bg-gray-800 text-white p-4">
@@ -21,9 +16,5 @@ export default function MainLayout({ children }) {
             {children}
           </main>
         </div>
-        
-      </body>
-
-    </html>
   );
 }

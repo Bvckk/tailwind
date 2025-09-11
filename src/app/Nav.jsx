@@ -12,7 +12,7 @@ export default function Nav() {
                 {item.title}
               </Link>
               {item.items?.length > 0 && (
-                <div className="absolute left-full top-0 bg-gray-800 border shadow-lg hidden group-hover:block">
+                <div className="absolute left-full top-0 bg-gray-800 border shadow-lg hidden group-hover:block z-20">
                   {item.items.map((subItem) => (
                     <Link
                       key={subItem.title}

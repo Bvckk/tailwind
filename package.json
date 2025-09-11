@@ -4,11 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+  "dev": "vite --host 0.0.0.0",
+  "build": "vite build",
+  "preview": "vite preview --host 0.0.0.0",
+  "lint": "eslint .",
+  "api": "npx json-server -w src/lib/Booking.json --port 3001",
+  "start": "npx concurrently \"npm run api\" \"npm run dev\""
+},
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.13",
     "axios": "^1.11.0",

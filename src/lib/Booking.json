@@ -34,6 +34,34 @@
       "roomName": "phongf hopj",
       "capacity": "10",
       "status": "available"
+    },
+    {
+      "id": "bcfa",
+      "roomId": "p106",
+      "roomName": "1",
+      "capacity": "1",
+      "status": "available"
+    },
+    {
+      "id": "98ec",
+      "roomId": "p107",
+      "roomName": "1",
+      "capacity": "1",
+      "status": "available"
+    },
+    {
+      "id": "56cb",
+      "roomId": "p108",
+      "roomName": "1",
+      "capacity": "1",
+      "status": "available"
+    },
+    {
+      "id": "8c20",
+      "roomId": "p109",
+      "roomName": "1",
+      "capacity": "1",
+      "status": "available"
     }
   ],
   "User": [],
